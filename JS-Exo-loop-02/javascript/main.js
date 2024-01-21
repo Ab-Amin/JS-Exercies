@@ -7,14 +7,18 @@
 
 
 let div = document.querySelector('div')
+// let buttons = document.querySelector('button')
+let clickPlus = document.querySelector('#buttonPlus')
+let clickMoin = document.querySelector('#buttonMoin')
 
 
+clickPlus.addEventListener('click', function(){
+  div.innerHTML++ 
+})
 
-
-
-
-
-
+clickMoin.addEventListener('click', function(){
+  div.innerHTML--
+})
 
 
 

@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(85, 85, 85);
+  padding: 50px;
+  font-family: Arial;
+  main{
+    > div{
+      border: 2px solid black;
+      border-radius: 10px;
+      width: fit-content;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: white;
+      margin-top: 20px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      button{
+        background-color: gray;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: all .15s ease-in-out;
+        &:hover{
+          background-color: rgb(87, 87, 87);
+          transition: all .15s ease-in-out;
+        }
+        &:active{
+          scale: 0.95;
+          transition: all .15s ease-in-out;
+        }
+      }
+  
+      > div:last-child{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+.round{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
